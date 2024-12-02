@@ -37,6 +37,9 @@ const Navbar = (props) => {
             </div>
           ) : (
             <div className='nav-loggedin'>
+              <button id='Contact'>
+                <Link style={{ textDecoration: 'none', color: 'inherit' }} to='/Recommended'>Recommended</Link>
+              </button>
               <ul className='nav-links'>
                 <li>
                   <Link style={{ textDecoration: 'none', color: 'inherit' }} to='/Reviewlist'>Reviewlist</Link>

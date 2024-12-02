@@ -18,7 +18,7 @@ const Login = (props) => {
             const data = await postSigninData({ 'email': email,  'password':password })
             console.log(data)
             props.setUsername(data.username)
-            props.setLoggedin(data.signedin)
+            props.setLoggedin(data.signedIn)
             props.setUserid(data.user_id)
             const response = await getUserReviews(data.user_id)
             console.log(`response is,`, response)
